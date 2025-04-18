@@ -18,18 +18,20 @@ const  Jsuser = {
 // console.log(Jsuser["fullname"]);
 // console.log(typeof Jsuser[mySym]);
 
-Jsuser.email = "shamoonzain@microsoft.com"
-Object.freeze(Jsuser)
-Jsuser.email = "alikz@gmail.com"
-console.log(Jsuser);
+// Jsuser.email = "shamoonzain@microsoft.com"
+// Object.freeze(Jsuser)
+// Jsuser.email = "alikz@gmail.com"
+// console.log(Jsuser);
 
 Jsuser.greeting = function (){
     console.log("Hello Js user");  
 }
 Jsuser.greetingtwo = function (){
-    console.log("Hello Js user");
+    console.log(`Hello Js user ${this.name}`);
     
 }  
-}
+console.log(Jsuser.greeting());
+console.log(Jsuser.greetingtwo());
+
 
 
