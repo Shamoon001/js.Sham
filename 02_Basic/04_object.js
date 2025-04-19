@@ -61,9 +61,28 @@ users[1].email
 // console.log(Object.values(tinderUser));
 // values are output
 
-console.log(Object.entries(tinderUser));
+// console.log(Object.entries(tinderUser));
 //entries are output
 
 
-console.log(tinderUser.hasOwnProperty("isLogedIn"));
+// console.log(tinderUser.hasOwnProperty("isLogedIn"));
 // checks that it is present in object or not
+
+
+const course = {
+    coursename: "ACCPRIME",
+    price: "786",
+    courseInstructor:"Shamoon"
+}
+
+// course.courseInstructor
+
+const {courseInstructor:instructor} = course
+// console.log(courseInstructor);
+// This is a long method
+console.log(instructor);
+
+//JSON FORMATTER MAKES THE CODE EASIER TO DECODE
+
+
+
